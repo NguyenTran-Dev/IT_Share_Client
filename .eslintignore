@@ -1,0 +1,8 @@
+src/reportWebVitals.ts
+/node_modules
+/package.json
+/package-lock.json
+/.prettierrc
+/tsconfig.json
+/src/shared
+/src/services/api/apiClient.ts
