@@ -14,7 +14,6 @@ const Configuration = {
           /**
            * Commit with format "[PRJ-123]type_commit: content"
            * Example:
-           *    "[JIRA-123]feat: create login page"
            *    "[TEST-123][BUG-321]fix: fix bug 321"
            * Type Commit:
            *  ✨ feat: Adding a new feature

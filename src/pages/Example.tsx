@@ -1,6 +1,5 @@
-import React from 'react';
-import { useDispatch } from 'react-redux';
-import { useSelector } from 'react-redux';
+import * as React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import logo from '../logo.svg';
 import { hello } from '../reducers/exampleReducer';
 import { RootState } from '../store/store';
@@ -8,11 +7,10 @@ import { RootState } from '../store/store';
 const Example = () => {
   const helloMsg = useSelector((state: RootState) => state.example.value);
   const dispatch = useDispatch();
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="app">
+      <header className="app-header">
+        <img src={logo} className="app-logo" alt="logo" />
         <h1>Welcome to React</h1>
         <h3>{helloMsg}</h3>
         <p>

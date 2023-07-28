@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit';
 
 export interface CounterState {
   value: string
@@ -6,7 +6,7 @@ export interface CounterState {
 
 const initialState: CounterState = {
   value: '',
-}
+};
 
 export const exampleSlice = createSlice({
   name: 'example',
@@ -17,12 +17,12 @@ export const exampleSlice = createSlice({
       // doesn't actually mutate the state because it uses the Immer library,
       // which detects changes to a "draft state" and produces a brand new
       // immutable state based off those changes
-      state.value = 'Hello! Welcome to Redux'
+      state.value = 'Hello! Welcome to Redux';
     },
   },
-})
+});
 
 // Action creators are generated for each case reducer function
-export const { hello } = exampleSlice.actions
+export const { hello } = exampleSlice.actions;
 
-export default exampleSlice.reducer
+export default exampleSlice.reducer;

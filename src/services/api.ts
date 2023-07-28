@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const http = axios.create({
-  baseURL: 'https://api.example.com'
+  baseURL: 'https://fd-booking.up.railway.app/api'
 });
 
 export default http;
