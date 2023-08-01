@@ -1,36 +1,38 @@
 import * as React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import logo from '../logo.svg';
-import { hello } from '../reducers/exampleReducer';
-import { RootState } from '../store/store';
+import { Container, Input, List, ListItem } from '@chakra-ui/react';
+import { FormControl } from '../components';
 
 const Example = () => {
-  const helloMsg = useSelector((state: RootState) => state.example.value);
-  const dispatch = useDispatch();
+  const commons = [
+    {
+      title: 'Form Control',
+      el: (
+        <FormControl
+          label="Email"
+          require
+          errorMessage="Email invalid"
+          helperText="input"
+        >
+          <Input />
+        </FormControl>
+      ),
+    },
+  ];
+  const renderCommon = () => {
+    return commons.map((item) => {
+      return (
+        <ListItem key={item.title}>
+          <h2>{item.title}</h2>
+          {item.el}
+        </ListItem>
+      );
+    });
+  };
   return (
-    <div className="app">
-      <header className="app-header">
-        <img src={logo} className="app-logo" alt="logo" />
-        <h1>Welcome to React</h1>
-        <h3>{helloMsg}</h3>
-        <p>
-          Edit <code>src/pages/Example.tsx</code> and save to reload.
-        </p>
-        <div>
-          <a
-            className="button"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          <a href="#" className="button" onClick={() => dispatch(hello())}>
-            Say Hello
-          </a>
-        </div>
-      </header>
-    </div>
+    <Container maxW="xxl" className="mock">
+      <h1 className="text-center">Mocks</h1>
+      <List>{renderCommon()}</List>
+    </Container>
   );
 };
 
