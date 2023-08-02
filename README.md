@@ -1,6 +1,6 @@
 # Lib:
 + React icon: https://react-icons.github.io/react-icons/icons?name=bi
-+ ChaKra-ui: https://chakra-ui.com/
++ Chakra-ui: https://chakra-ui.com/
 + React Hook Form: https://react-hook-form.com/get-started
 + Yup: https://react-hook-form.com/get-started#SchemaValidation
 + React Router Dom v6: https://reactrouter.com/en/main
