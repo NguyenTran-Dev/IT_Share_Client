@@ -1,7 +1,7 @@
 import { getSession } from './servicesSession';
-const userInfo = getSession('userInfo');
 
 const isLogin = () => {
+  const userInfo = getSession('user-info');
   if (Object.keys(userInfo).length > 0) {
     return true;
   }

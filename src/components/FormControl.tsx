@@ -16,7 +16,12 @@ const FormControlCommon = (props: IFormControl) => {
   const { label, errorMessage, require, helperText, children } = props;
 
   return (
-    <FormControl isRequired={require} p={4} isInvalid={!!errorMessage}>
+    <FormControl
+      isRequired={require}
+      px={4}
+      my="1rem"
+      isInvalid={!!errorMessage}
+    >
       <FormLabel>{label}</FormLabel>
       {children}
       {!errorMessage ? (
