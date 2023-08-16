@@ -4,9 +4,18 @@
 
 // -----Common-----
 @import url('./common/_text.scss');
+@import url('./common/_header.scss');
 // -----End----- 
 
 // -----Pages-----
 @import url('./pages/_mock.scss');
 // -----End-----
 
+.home-slg {
+  background: linear-gradient(to right, rgb(84, 136, 199), rgb(161, 82, 132));
+}
+.login {
+  & .chakra-card{
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  }
+}

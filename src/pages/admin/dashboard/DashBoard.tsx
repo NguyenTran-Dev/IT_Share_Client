@@ -1,12 +1,16 @@
-import { Button } from '@chakra-ui/react';
+import { Box, Button, Heading } from '@chakra-ui/react';
 import React from 'react';
 
 const DashBoard = () => {
   return (
-    <>
-      <h1>DashBoard</h1>
-      <Button>DashBoard</Button>
-    </>
+    <Box>
+      <Heading fontSize={{ base: '1rem', md: '1.5rem' }} fontWeight="300">
+        DashBoard
+      </Heading>
+      <Box mt="1rem">
+        <Button>DashBoard</Button>
+      </Box>
+    </Box>
   );
 };
 

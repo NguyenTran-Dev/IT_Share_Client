@@ -1,0 +1,36 @@
+.header {
+  background-color: var(--white-color);
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.1);
+  &_nav-link{
+    font-weight: 700;
+    color: var(--gray-color);
+    &:hover, :active {
+      color: var(--black-color);
+    }
+  }
+  &-main {
+    display: block;
+  }
+  &-sub {
+    display: none;
+  }
+  @media only screen and (max-width: 768px) {
+    &-main {
+      display: none;
+    }
+    &-sub {
+      display: block;
+    }
+  }
+}
+
+.footer {
+  background-color: #0b1a33!important;
+  &_logo{
+    font-size: 2.5rem;
+    font-style: italic;
+  }
+  &_login {
+    box-shadow: 4px 0  4px 4px rgba(0,0,0,.1);
+  }
+}

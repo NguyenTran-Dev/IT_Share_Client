@@ -1,9 +1,19 @@
 import { configureStore } from '@reduxjs/toolkit';
-import exampleReducer from '../reducers/exampleReducer';
+import authReducer from '../reducers/authReducer';
+import postReducer from '../reducers/postReducer';
+import emotionsReducer from '../reducers/emotionsReducer';
+import commentReducer from '../reducers/commentReducer';
+import promptReducer from '../reducers/promptReducer';
+import userReducer from '../reducers/userReducer';
 
 export const store = configureStore({
   reducer: {
-    example: exampleReducer
+    authReducer: authReducer,
+    postReducer: postReducer,
+    emotionsReducer: emotionsReducer,
+    commentReducer: commentReducer, 
+    promptReducer: promptReducer,
+    userReducer: userReducer
   },
 });
 
